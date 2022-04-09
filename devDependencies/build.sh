@@ -26,7 +26,8 @@ cp -R front/indexdependencies/js servefront/indexdependencies
 cp -R front/styles servefront
 cp -R front/index.html servefront
 cp -R front/out.js servefront
-
+cp front/robots.txt servefront
+cp front/sitemap.xml servefront
 
 echo minify index.html
 minify servefront/index.html > servefront/index.min.html
