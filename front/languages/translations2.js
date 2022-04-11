@@ -7,8 +7,8 @@ export let translations = {
     // English translations
     "en": {
      [t.STEP1.CARDTITLE]  : "Divide your life into chapters",
-     [t.STEP1.CARDTEXT]: "Please divide your life into 7 chapters. Example of chapter could be First Year In School or ",
-     [t.STEP1.INPUT1]  : "Write your first chapter here... maybe it is primary school?",
+     [t.STEP1.CARDTEXT]: "Please divide your life into 7 chapters. Example of chapter could be First Year In School, First job, relationship ",
+     [t.STEP1.INPUT1]  : "Write your first chapter here...",
      [t.STEP1.INPUT2]  : "Write your second chapter here...",
      [t.STEP1.INPUT3]  : "Write your third chapter here...",
      [t.STEP1.INPUT4]  : "Write your fourth chapter here...",
@@ -158,8 +158,14 @@ export let translations = {
 
 
      [t.FRONTPAGE.PROMO1]: "100 % Free. No need to register, no fees.",
-     [t.FRONTPAGE.PROMO2]: "100 % Private. No data is sent to any server. All data is kept on your device",
-     [t.FRONTPAGE.PROMO3]: "100 % Run on your donations and ads that are being shown on the site."
+     [t.FRONTPAGE.PROMO2]: "100 % Private. No data is sent to any server. All data is kept on your device.",
+     [t.FRONTPAGE.PROMO3]: "100 % Run on your donations and ads that are being shown on the site.",
+
+
+     [t.FRONTPAGE.MADE_FOR_YOU]: "It's made for you, yes you",
+     [t.FRONTPAGE.ARTICLE]: "This website was developed because there was a need for completely private and free app to write your own story.",
+     [t.FRONTPAGE.FOOTER_TEXT]: "Developed to promote mental health and and quality of life. ❤️"
+
 
     },
     "fi": {

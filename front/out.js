@@ -6568,7 +6568,10 @@
       THREE_INFO_DIV: "THREE_INFO_DIV",
       PROMO1: "PROMO1",
       PROMO2: "PROMO2",
-      PROMO3: "PROMO3"
+      PROMO3: "PROMO3",
+      MADE_FOR_YOU: "MADE_FOR_YOU",
+      ARTICLE: "ARTICLE",
+      FOOTER_TEXT: "FOOTER_TEXT"
     }
   };
   var t2 = {
@@ -7520,8 +7523,8 @@
   var translations = {
     "en": {
       [t.STEP1.CARDTITLE]: "Divide your life into chapters",
-      [t.STEP1.CARDTEXT]: "Please divide your life into 7 chapters. Example of chapter could be First Year In School or ",
-      [t.STEP1.INPUT1]: "Write your first chapter here... maybe it is primary school?",
+      [t.STEP1.CARDTEXT]: "Please divide your life into 7 chapters. Example of chapter could be First Year In School, First job, relationship ",
+      [t.STEP1.INPUT1]: "Write your first chapter here...",
       [t.STEP1.INPUT2]: "Write your second chapter here...",
       [t.STEP1.INPUT3]: "Write your third chapter here...",
       [t.STEP1.INPUT4]: "Write your fourth chapter here...",
@@ -7653,8 +7656,11 @@
       [t.FRONTPAGE.REMOVE_WEIGHT]: "REMOVE THE WEIGHT OF THE PAST - If you remember memories that make you ashamed, guilty, angry, or hurt, and those memories are more than a year and a half old, your mind is not at peace. You still have the weight of the past.",
       [t.FRONTPAGE.STRESS_MANAGEMENT]: "STRESS MANAGEMENT - If you recognize these signs in yourself, your mental and physical health may be at risk. Your body produces cortisol when it detects that it is in danger and a constantly elevated level of cortisol suppresses the immune system, burns energy, damages memory and emotional abilities.",
       [t.FRONTPAGE.PROMO1]: "100 % Free. No need to register, no fees.",
-      [t.FRONTPAGE.PROMO2]: "100 % Private. No data is sent to any server. All data is kept on your device",
-      [t.FRONTPAGE.PROMO3]: "100 % Run on your donations and ads that are being shown on the site."
+      [t.FRONTPAGE.PROMO2]: "100 % Private. No data is sent to any server. All data is kept on your device.",
+      [t.FRONTPAGE.PROMO3]: "100 % Run on your donations and ads that are being shown on the site.",
+      [t.FRONTPAGE.MADE_FOR_YOU]: "It's made for you, yes you",
+      [t.FRONTPAGE.ARTICLE]: "This website was developed because there was a need for completely private and free app to write your own story.",
+      [t.FRONTPAGE.FOOTER_TEXT]: "Developed to promote mental health and and quality of life. \u2764\uFE0F"
     },
     "fi": {},
     "es": {

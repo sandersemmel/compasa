@@ -545,7 +545,10 @@ export const t = {
         THREE_INFO_DIV: "THREE_INFO_DIV",
         PROMO1: "PROMO1",
         PROMO2: "PROMO2",
-        PROMO3: "PROMO3"
+        PROMO3: "PROMO3",
+        MADE_FOR_YOU: "MADE_FOR_YOU",
+        ARTICLE: "ARTICLE",
+        FOOTER_TEXT: "FOOTER_TEXT"
     }
 }
 
