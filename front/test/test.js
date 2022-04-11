@@ -1,10 +1,28 @@
+import * as util from '../util.js';
+import * as enume from '../enum.js';
 import * as htmlgenerator from '../../front/htmlgenerator.js';
 import jsdomm from 'jsdom';
-import * as util from '../../front/util.js'
 import {STEPS} from '../../front/enum.js';
 
 describe("HTML ELEMENTS TEST",function(){
-    it('Should return 7 elements', function () {
+
+
+    it('Should exist in domain', function () {
+      //selectLanguageBasedOnHref("ee");
+      let language = util.getFrom("https://compasa.me/",enume.domains);
+      console.log(language);
+      //console.log("yo");
+      });
+
+    it('Does not exist in domain', function () {
+        //selectLanguageBasedOnHref("ee");
+        let language = util.getFrom("https://kuke.me/",enume.domains);
+        console.log(language);
+        //console.log("yo");
+      });
+
+
+      it('Should return 7 elements', function () {
         let obj = new jsdomm.JSDOM('...');
         let result = htmlgenerator.getTitlesHTML(obj.window.document)
         assert("fuck you, amount doesn't match", 7,result.length)

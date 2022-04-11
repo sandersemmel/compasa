@@ -2,7 +2,8 @@ import { ALL_STEP2_TEXTAREATITLE_KEYS, CSSCLASSES, CSS_IDS, DBCONSTANTS, ELEMENT
 import * as util from './util.js'
 import * as usercontroller from './usercontroller.js';
 import { get } from "./store.js";
-import { Fireworks } from 'fireworks-js'
+import pkg from 'fireworks-js'
+const {Fireworks} = pkg;
 
 
 

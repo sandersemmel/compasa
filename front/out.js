@@ -6934,6 +6934,9 @@
     wrapper.append(span);
     return wrapper;
   }
+  function getFrom(getthis, from) {
+    return from[getthis];
+  }
 
   // front/classes/stateobject.js
   var stateobject = class {
@@ -7219,6 +7222,7 @@
 
   // front/htmlgenerator.js
   var import_fireworks_js = __toESM(require_fireworks(), 1);
+  var { Fireworks } = import_fireworks_js.default;
   function getTitlesHTML(document2) {
     let list = [];
     PAGES.TITLES.inputs.forEach((input) => {
@@ -7429,7 +7433,7 @@
     let card = createCard(null, t.STEP6.CARDTITLE, null, t.STEP6.CARDTEXT);
     appendToElement(ELEMENTS.GENERATED_CONTENT_DIV, card);
     const container = document.querySelector("body");
-    const fireworks = new import_fireworks_js.Fireworks(container, {});
+    const fireworks = new Fireworks(container, {});
     fireworks.start();
   }
 
@@ -7941,12 +7945,11 @@
   }
   function startlisteners() {
     startButtonListener();
-    selectLanguageBasedOnHref();
+    selectLanguageBasedOnHref(window.location.href);
   }
-  function selectLanguageBasedOnHref() {
-    let lang = selectedlanguages[window.location.href];
-    console.log("windw.location.href", window.location.href);
-    console.log("lang by window location", lang);
+  function selectLanguageBasedOnHref(winlochref) {
+    let lang = getFrom(winlochref, domains);
+    console.log("new lang will be:", lang);
     if (!lang) {
       lang = selectedlanguages.en;
     }

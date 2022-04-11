@@ -1,6 +1,6 @@
 
-import { DBCONSTANTS, KEYS } from "./enum";
-import { getByKeyAndSetIfNotExist } from "./usercontroller";
+import { DBCONSTANTS, KEYS } from "./enum.js";
+import { getByKeyAndSetIfNotExist } from "./usercontroller.js";
 
 export function getAddress(){
     return get("address");

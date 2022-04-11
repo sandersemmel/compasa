@@ -1,3 +1,4 @@
+
 export function getSelectedAddress(){
     //@ts-ignore
     return window.ethereum.selectedAddress;
@@ -268,3 +269,9 @@ export function createCheckBox(ID, spanName) {
 
 
 }
+
+
+export function getFrom(getthis,from){
+    return from[getthis];
+}
+
