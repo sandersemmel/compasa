@@ -31,12 +31,6 @@ async function startTranslate(){
 
 
 
-function tryToChange(){
-
-}
-
-
-
 function writeToFile(text){
     fs.writeFile(`${options.to}.json`,JSON.stringify(text),()=>{
         console.log("new file done");
@@ -54,13 +48,12 @@ async function trans(translateText,options) {
 
 
 async function main(){
-    //let newTrans = await startTranslate();
-
+    let newTrans = await startTranslate();
     writeToFile(newTrans);
 
 }
 
 main();
 
-startTranslate();
+
 
