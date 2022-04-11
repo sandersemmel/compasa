@@ -56,6 +56,7 @@ function startButtonListener(){
 function startlisteners(){
     startButtonListener()
     selectLanguageBasedOnHref(window.location.href);
+    translate();
 }
 
 

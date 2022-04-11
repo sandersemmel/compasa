@@ -745,5 +745,8 @@ export const domains = {
     "compasa.me": selectedlanguages.en,
     
     "https://es.compasa.me/": selectedlanguages.es,
-    "es.compasa.me": selectedlanguages.es
+    "es.compasa.me": selectedlanguages.es,
+
+    "http://localhost:3000/": selectedlanguages.en,
+    "http://es.localhost:3000/": selectedlanguages.es
 }

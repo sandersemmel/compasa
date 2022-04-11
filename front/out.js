@@ -6745,7 +6745,9 @@
     "https://compasa.me/": selectedlanguages.en,
     "compasa.me": selectedlanguages.en,
     "https://es.compasa.me/": selectedlanguages.es,
-    "es.compasa.me": selectedlanguages.es
+    "es.compasa.me": selectedlanguages.es,
+    "http://localhost:3000/": selectedlanguages.en,
+    "http://es.localhost:3000/": selectedlanguages.es
   };
 
   // front/store.js
@@ -7946,6 +7948,7 @@
   function startlisteners() {
     startButtonListener();
     selectLanguageBasedOnHref(window.location.href);
+    translate();
   }
   function selectLanguageBasedOnHref(winlochref) {
     let lang = getFrom(winlochref, domains);
