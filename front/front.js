@@ -1,7 +1,7 @@
 import * as viewcontroller from './viewcontroller.js';
-import { fpconst, ELEMENTS } from "./enum.js";
+import { fpconst, ELEMENTS, selectedlanguages } from "./enum.js";
 import $ from 'jquery';
-import { translate } from './languages/translations2.js';
+import { translate, translations, setCurrentlySelectedLanguage } from './languages/translations2.js';
 
 
 
@@ -54,8 +54,21 @@ function startButtonListener(){
 
 function startlisteners(){
     startButtonListener()
-    translate();
+    selectLanguageBasedOnHref();
 }
+
+function selectLanguageBasedOnHref(){
+    let lang = selectedlanguages[window.location.href];
+    if(!lang){
+        // default lang
+        lang = selectedlanguages.en
+    }
+    setCurrentlySelectedLanguage(lang);
+    //store
+    //window.location.href
+    //console.log(window.location.href);
+}
+
 
 
 $(window).on('load', startlisteners);

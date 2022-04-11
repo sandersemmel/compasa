@@ -144,3 +144,12 @@ export function setAnalysisShowableText(value){
     set(KEYS.STEP5_SHOWABLE_TEXT_TO_USER,value);
 }
 
+export function getCurrentLanguage(){
+    return getByKeyAndSetIfNotExist(KEYS.CURRENT_LANGUAGE,"en");
+}
+
+export function setCurrentLanguage(lang){
+    return set(KEYS.CURRENT_LANGUAGE,lang);
+}
+
+
