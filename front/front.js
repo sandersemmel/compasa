@@ -59,14 +59,13 @@ function startlisteners(){
 
 function selectLanguageBasedOnHref(){
     let lang = selectedlanguages[window.location.href];
+    console.log("windw.location.href", window.location.href);
+    console.log("lang by window location",lang)
     if(!lang){
         // default lang
         lang = selectedlanguages.en
     }
     setCurrentlySelectedLanguage(lang);
-    //store
-    //window.location.href
-    //console.log(window.location.href);
 }
 
 

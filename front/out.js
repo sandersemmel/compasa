@@ -7945,6 +7945,8 @@
   }
   function selectLanguageBasedOnHref() {
     let lang = selectedlanguages[window.location.href];
+    console.log("windw.location.href", window.location.href);
+    console.log("lang by window location", lang);
     if (!lang) {
       lang = selectedlanguages.en;
     }
