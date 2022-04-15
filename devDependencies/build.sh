@@ -28,7 +28,7 @@ cp -R front/index.html servefront
 cp -R front/out.js servefront
 cp front/robots.txt servefront
 cp front/sitemap.txt servefront
-
+cp -R front/images servefront
 echo minify index.html
 minify servefront/index.html > servefront/index.min.html
 mv servefront/index.min.html servefront/index.html

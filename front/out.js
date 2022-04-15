@@ -7646,11 +7646,11 @@
       [t.STEP5.TEXT_AREA]: "Write your analysis here...",
       [t.STEP6.CARDTITLE]: "Well done! You should be very proud of yourself.",
       [t.STEP6.CARDTEXT]: "The effects of your writing might take a while to fully manifest themselves. Feeling worse after writing is totally normal. You have done a huge job going through your past and it's not an easy task. You should start feeling positive benefits after two weeks. Your past memories will no longer haunt and bother you as much and you won't feel resentment. We hope that this excercise helped you becoming a better person, you deserve it. After you start feeling the positive benefits, you can continue on to the next excercise.",
-      [t.FRONTPAGE.LARGETEXT]: "Start your new life",
-      [t.FRONTPAGE.LETSGO_BTN]: "Lets go!",
+      [t.FRONTPAGE.LARGETEXT]: "Best free online therapy",
+      [t.FRONTPAGE.LETSGO_BTN]: "Start free therapy",
       [t.FRONTPAGE.SMALLER_TEXT]: "Get to know yourself",
       [t.FRONTPAGE.SMALLER_TEXT_SUBTEXT]: "The purpose of this exercise is to help you develop a clearer sense of your past by writing your own story.",
-      [t.FRONTPAGE.WHY_BOTHER]: "Why bother?",
+      [t.FRONTPAGE.WHY_BOTHER]: "Why selfhelp therapy?",
       [t.FRONTPAGE.WHEN_BAD]: "When bad things happen to you, your mind and body react by treating the environment as if it were dangerous and preparing for an emergency. This preparation is stressful and will exhaust you mentally and physically.",
       [t.FRONTPAGE.DONT_MAKE_SAME_MISTAKES]: "DON\u2019T REPEAT MISTAKES - If something bad has happened to you in the past, your mind can\u2019t be at peace until you\u2019ve figured out how to avoid the same thing happening to you again in the future.",
       [t.FRONTPAGE.REMOVE_WEIGHT]: "REMOVE THE WEIGHT OF THE PAST - If you remember memories that make you ashamed, guilty, angry, or hurt, and those memories are more than a year and a half old, your mind is not at peace. You still have the weight of the past.",
@@ -7658,9 +7658,9 @@
       [t.FRONTPAGE.PROMO1]: "100 % Free. No need to register, no fees.",
       [t.FRONTPAGE.PROMO2]: "100 % Private. No data is sent to any server. All data is kept on your device.",
       [t.FRONTPAGE.PROMO3]: "100 % Run on your donations and ads that are being shown on the site.",
-      [t.FRONTPAGE.MADE_FOR_YOU]: "It's made for you, yes you",
-      [t.FRONTPAGE.ARTICLE]: "This website was developed because there was a need for completely private and free app to write your own story.",
-      [t.FRONTPAGE.FOOTER_TEXT]: "Developed to promote mental health and and quality of life. \u2764\uFE0F"
+      [t.FRONTPAGE.MADE_FOR_YOU]: "Best free online therapy tool with privacy by default.",
+      [t.FRONTPAGE.ARTICLE]: "Best free online mental health program to help cope with stress",
+      [t.FRONTPAGE.FOOTER_TEXT]: "Best free online therapy with privacy by default. \u2764\uFE0F"
     },
     "fi": {},
     "es": {
