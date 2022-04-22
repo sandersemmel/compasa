@@ -739,7 +739,8 @@ export const fpconst = {
 
 export const selectedlanguages = {
     en: "en",
-    es: "es"
+    es: "es",
+    fi: "fi"
 }
 
 
@@ -750,6 +751,12 @@ export const domains = {
     "https://es.compasa.me/": selectedlanguages.es,
     "es.compasa.me": selectedlanguages.es,
 
+    //local
     "http://localhost:3000/": selectedlanguages.en,
-    "http://es.localhost:3000/": selectedlanguages.es
+    "http://es.localhost:3000/": selectedlanguages.es,
+
+    //fi
+    "https://fi.localhost:3000": selectedlanguages.fi,
+    "https://fi.compasa.me": selectedlanguages.fi,
+    "fi.compasa.me": selectedlanguages.fi
 }
