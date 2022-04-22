@@ -9,7 +9,7 @@ let creds = {
 
 let options = {
     from: "en",
-    to: "es"
+    to: "fi"
 }
 
 const translate = new v2.Translate(creds);
