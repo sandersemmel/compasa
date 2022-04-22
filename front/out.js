@@ -6942,6 +6942,44 @@
   function getFrom(getthis, from) {
     return from[getthis];
   }
+  function getTitleandTextAreaData(step) {
+    let data = {
+      title: "",
+      textarea: ""
+    };
+    switch (step) {
+      case FIELDS.FIELDS1:
+        data.title = PAGES.TITLES.inputs[0];
+        data.textarea = PAGES.TITLES.inputs[0] + step;
+        return data;
+      case FIELDS.FIELDS2:
+        data.title = PAGES.TITLES.inputs[1];
+        data.textarea = PAGES.TITLES.inputs[1] + step;
+        return data;
+      case FIELDS.FIELDS3:
+        data.title = PAGES.TITLES.inputs[2];
+        data.textarea = PAGES.TITLES.inputs[2] + step;
+        return data;
+      case FIELDS.FIELDS4:
+        data.title = PAGES.TITLES.inputs[3];
+        data.textarea = PAGES.TITLES.inputs[3] + step;
+        return data;
+      case FIELDS.FIELDS5:
+        data.title = PAGES.TITLES.inputs[4];
+        data.textarea = PAGES.TITLES.inputs[4] + step;
+        return data;
+      case FIELDS.FIELDS6:
+        data.title = PAGES.TITLES.inputs[5];
+        data.textarea = PAGES.TITLES.inputs[5] + step;
+        return data;
+      case FIELDS.FIELDS7:
+        data.title = PAGES.TITLES.inputs[6];
+        data.textarea = PAGES.TITLES.inputs[6] + step;
+        return data;
+      default:
+        break;
+    }
+  }
 
   // front/classes/stateobject.js
   var stateobject = class {
@@ -7224,6 +7262,13 @@
       updateUserStateShouldBe(STEPS.STEP4);
     }
   }
+  function updateStep2State() {
+    if (isFieldsLeft()) {
+      incrementCurrentFields();
+    } else {
+      updateUserStateShouldBe(STEPS.STEP3);
+    }
+  }
 
   // front/htmlgenerator.js
   var import_fireworks_js = __toESM(require_fireworks(), 1);
@@ -7279,6 +7324,7 @@
     clearGeneratedContent();
     let form = document.createElement("form");
     let currentFields = getCurrentFields2();
+    let titleAndTextArea = getTitleandTextAreaData(currentFields);
     let textareas = renderBasedOnFields(currentFields);
   }
   function generateInputTitle(input) {
@@ -7463,11 +7509,7 @@
         let formData = getFormData(CSS_IDS.FIELDS_FORM);
         saveFormData(formData);
         console.log();
-        if (isFieldsLeft()) {
-          incrementCurrentFields();
-        } else {
-          updateUserStateShouldBe(STEPS.STEP3);
-        }
+        updateStep2State();
         resume();
       });
     }
@@ -7878,8 +7920,16 @@
         fieldsButtonListener();
       }
       if (state.page === STEPS.STEP2 && state.shouldBe === STEPS.STEP2) {
-        generateStep2();
-        fieldsButtonListener();
+        let step = getCurrentFields2();
+        let data = getTitleandTextAreaData(step);
+        let input = getByKey2(data.title);
+        if (input !== DBCONSTANTS.NOT_SPECIFIED) {
+          generateStep2();
+          fieldsButtonListener();
+        } else {
+          updateStep2State();
+          decideRender();
+        }
       }
       if (state.page === STEPS.STEP2 && state.shouldBe === STEPS.STEP3) {
         if (generateStep3() === generateconstants.RE_RENDER) {

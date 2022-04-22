@@ -1,8 +1,10 @@
-import {STEPS, generateconstants} from './enum.js';
+import {STEPS, generateconstants, DBCONSTANTS} from './enum.js';
 import * as usercontroller from './usercontroller.js';
 import * as htmlgenerator from './htmlgenerator.js';
 import * as actionlisteners from './listeners/actionlisteners.js';
 import * as translator from './languages/translations2.js';
+import { ENUM } from '../back/util/magicstrings.js';
+import * as util from './util.js';
 
 
 export function resume(){
@@ -42,9 +44,18 @@ function decideRender(){
             //actionlistener for another buton
         }
         if(state.page === STEPS.STEP2 && state.shouldBe ===  STEPS.STEP2){
-            htmlgenerator.generateStep2(); // fields
-            actionlisteners.fieldsButtonListener();
+            let step = usercontroller.getCurrentFields();
+            let data = util.getTitleandTextAreaData(step);
+            let input = usercontroller.getByKey(data.title);
+            if(input !== DBCONSTANTS.NOT_SPECIFIED){
+                htmlgenerator.generateStep2(); // fields
+                actionlisteners.fieldsButtonListener();
+            } else{
+                usercontroller.updateStep2State();
+                decideRender();
+            }
         }
+
 
         if(state.page === STEPS.STEP2 && state.shouldBe === STEPS.STEP3){
             if(htmlgenerator.generateStep3() === generateconstants.RE_RENDER){ // impact first time

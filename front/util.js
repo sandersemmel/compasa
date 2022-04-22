@@ -1,3 +1,4 @@
+import { FIELDS, PAGES } from "./enum.js";
 
 export function getSelectedAddress(){
     //@ts-ignore
@@ -273,5 +274,44 @@ export function createCheckBox(ID, spanName) {
 
 export function getFrom(getthis,from){
     return from[getthis];
+}
+
+export function getTitleandTextAreaData(step){
+    let data = {
+        title: "",
+        textarea: ""
+    }
+    switch (step) {
+        case FIELDS.FIELDS1:
+            data.title =  PAGES.TITLES.inputs[0];
+            data.textarea =  PAGES.TITLES.inputs[0]+step;
+            return data;
+        case FIELDS.FIELDS2:
+            data.title =  PAGES.TITLES.inputs[1];
+            data.textarea =  PAGES.TITLES.inputs[1]+step;
+            return data;
+        case FIELDS.FIELDS3:
+            data.title =  PAGES.TITLES.inputs[2];
+            data.textarea =  PAGES.TITLES.inputs[2]+step;
+            return data;
+        case FIELDS.FIELDS4:
+            data.title =  PAGES.TITLES.inputs[3];
+            data.textarea =  PAGES.TITLES.inputs[3]+step;
+            return data;
+        case FIELDS.FIELDS5:
+            data.title =  PAGES.TITLES.inputs[4];
+            data.textarea =  PAGES.TITLES.inputs[4]+step;
+            return data;
+        case FIELDS.FIELDS6:
+            data.title =  PAGES.TITLES.inputs[5];
+            data.textarea =  PAGES.TITLES.inputs[5]+step;
+            return data;
+        case FIELDS.FIELDS7:
+            data.title =  PAGES.TITLES.inputs[6];
+            data.textarea =  PAGES.TITLES.inputs[6]+step;
+            return data;
+        default:
+            break;
+    }
 }
 

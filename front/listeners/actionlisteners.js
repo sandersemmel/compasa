@@ -33,12 +33,7 @@ export function fieldsButtonListener(){
             
             console.log();
 
-            if(usercontroller.isFieldsLeft()){
-                usercontroller.incrementCurrentFields();
-
-            }else{
-                usercontroller.updateUserStateShouldBe(STEPS.STEP3)
-            }
+            usercontroller.updateStep2State();
 
             viewcontroller.resume();
         })

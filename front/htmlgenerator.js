@@ -146,9 +146,12 @@ export function generateStep2() {
     let form = document.createElement("form");
 
     // TODO check if the values exist before letting to render?
-
+    //let doesTitleExist = 
     // get the current step & value associated with it
     let currentFields = usercontroller.getCurrentFields();
+    let titleAndTextArea = util.getTitleandTextAreaData(currentFields);
+
+
     let textareas = renderBasedOnFields(currentFields);
 
 

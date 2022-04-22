@@ -419,3 +419,11 @@ export function nextImpact(){
     }
 }
 
+export function updateStep2State(){
+    if(isFieldsLeft()){
+        incrementCurrentFields();
+
+    }else{
+        updateUserStateShouldBe(STEPS.STEP3)
+    }
+}

@@ -42,7 +42,20 @@ describe("HTML ELEMENTS TEST",function(){
           let result = util.shouldPersist(state);
           assert("Should be false, broski", false, result);
         })
+
+
      }) 
+
+     it("Should return matching data", function(){
+      let data = util.getTitleandTextAreaData("fields1");
+
+      let title = enume.PAGES.TITLES.inputs[0];
+      //console.log(data.title);
+
+      assert("BRUH", title,data.title);
+      //data.title === title
+
+    })
 
 })
 
