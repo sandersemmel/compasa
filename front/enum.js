@@ -758,5 +758,7 @@ export const domains = {
     //fi
     "https://fi.localhost:3000": selectedlanguages.fi,
     "https://fi.compasa.me": selectedlanguages.fi,
-    "fi.compasa.me": selectedlanguages.fi
+    "https://fi.compasa.me/": selectedlanguages.fi,
+    "fi.compasa.me": selectedlanguages.fi,
+    "http://fi.localhost:3000/": selectedlanguages.fi
 }
