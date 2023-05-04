@@ -1,9 +1,13 @@
-Questionnaire therapy website
+# Questionnaire therapy website
 
 -clone it
+
 -start it with 'npm run dev'
+
 -after starting go to localhost:3000
+
 -all entered data is saved to browsers key-value store
+
 
 -contains some old code for different purposes, probably should delete but 🤷, any keys you find are deactivated etc..
 
