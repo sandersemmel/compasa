@@ -1,8 +1,8 @@
 # Questionnaire therapy website
 
--clone it
+<p>-clone it</p>
 
--start it with 'npm run dev'
+<p>-start it with 'npm run dev'</p>
 
 -after starting go to localhost:3000
 
